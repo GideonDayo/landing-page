@@ -1,13 +1,14 @@
 .gradient-container {
-  background-image: linear-gradient(to bottom, #A8DADC, #F1FAEE);
+  background-image: linear-gradient(to bottom, #a8dadc, #f1faee);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0; /* Added to remove extra whitespace */
 }
 
 header {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 0;
   padding: 20px 0;
   width: 100%;
@@ -15,7 +16,7 @@ header {
 }
 
 .topbar {
-  background: transparent; 
+  background: transparent;
   height: 10%;
   width: 100%;
   display: flex;
@@ -25,15 +26,13 @@ header {
 
 body {
   background-color: #fc16169b;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
 
 header {
   text-align: left;
@@ -46,7 +45,7 @@ header img {
 }
 
 .hero {
-  background: #F1FAEE;
+  background: #f1faee;
   padding: 40px 20px;
   width: 100%;
   display: flex;
@@ -65,9 +64,10 @@ header img {
 }
 
 .hero-form {
-  background: #e1e1e1;
+  background: #a8dadc;
   padding: 40px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
 }
 
 .hero-form h3 {
@@ -152,149 +152,63 @@ header img {
   stroke-dashoffset: 0;
 }
 
-.problem-statement, .pain-points, .user-quotes {
-  background: #fff;
-  padding: 60px 20px;
+.problem-statement,
+.pain-points,
+.user-quotes {
+  background: #f1faee;
+  padding: 40px 20px;
   border-radius: 5px;
   text-align: center;
-  margin: 50px 0;
-  width: 80%;
-}
-
-.pain-points {
-  background: #F8F8F8;
-  padding: 40px 20px;
-  border-radius: 0px;
-  text-align: center;
-  margin: 20px 0;
+  margin: 0;
   width: 100%;
 }
 
-.pain-point-cards {
+.pain-points .pain-point-cards,
+.user-quotes .quote-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 60px;
-  padding-left: 10%;
-  padding-right: 10%;
+  justify-content: space-around;
 }
 
-.quote-cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 60px;
-  padding-left: 0%;
-  padding-right: 0%;
-}
-
-.pain-point {
-  background: #FDFCFA;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  flex-basis: 30%;
-  margin: 10px;
-  text-align: left;
-}
-
-.quote {
+.pain-points .pain-point,
+.user-quotes .quote {
   background: #f9f9f9;
   padding: 20px;
+  width: 30%;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  flex-basis: 40%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
-  text-align: left;
 }
 
-.pain-point h3, .quote p {
-  margin: 0 0 10px;
-}
-
-.pain-point a{
-  color: black;
-}
-
-.quote .user {
-  font-weight: bold;
+.user-quotes .quote .user {
+  text-align: right;
+  margin-top: 20px;
+  font-style: italic;
 }
 
 footer {
   background: #000;
   color: #fff;
-  padding: 20px;
+  padding: 40px 20px;
+  text-align: center;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer-content {
-  text-align: left;
+footer .footer-content h3 {
+  margin-bottom: 10px;
 }
 
-.footer-logo {
-  text-align: right;
-}
-
-.footer-button img {
-  max-width: 100px;
-}
-
-footer button {
-  background-color: #fff;
-  color: #000;
-  border: none;
+footer .footer-button button {
   padding: 10px 20px;
-  cursor: pointer;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
   border-radius: 5px;
+  cursor: pointer;
 }
 
-footer button:hover {
-  background-color: #ddd;
-}
-
-/* Media Queries for Mobile Responsiveness */
-@media (max-width: 768px) {
-  .hero-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text, .hero-form {
-    max-width: 100%;
-    margin-top: 20px;
-  }
-
-  .pain-point-cards, .quote-cards {
-    padding-left: 5%;
-    padding-right: 5%;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .pain-point, .quote {
-    flex-basis: 100%;
-    margin: 10px 0;
-  }
-}
-
-@media (max-width: 480px) {
-  .hero {
-    padding: 20px 10px;
-  }
-
-  .hero-form {
-    padding: 20px;
-  }
-
-  .pain-points {
-    padding: 20px 10px;
-  }
-
-  .pain-point-cards, .quote-cards {
-    padding-left: 0;
-    padding-right: 0;
-  }
+footer .footer-button button:hover {
+  background-color: #218838;
 }
