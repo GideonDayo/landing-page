@@ -1,12 +1,39 @@
-body {
+.gradient-container {
+  background-image: linear-gradient(to bottom, #A8DADC, #F1FAEE);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
   font-family: 'Poppins';
-  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.topbar {
+  background: transparent; 
+  height: 10%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: rgba(45, 35, 66, 0.3) 0 4px 8px, rgb(21, 19, 32) 0 -2px 0 inset;
+}
+
+body {
+  background-color: #fc16169b;
+  font-family: 'Poppins';
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+
 
 header {
   text-align: left;
@@ -19,7 +46,7 @@ header img {
 }
 
 .hero {
-  background: #f1f1f1;
+  background: #F1FAEE;
   padding: 40px 20px;
   width: 100%;
   display: flex;
